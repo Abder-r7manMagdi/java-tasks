@@ -8,7 +8,10 @@ public class BodyMassIndex {
         System.out.print("Enter height in meters:");
         double height =input.nextDouble();
         double bmi =  weight / (height*height);
-        System.out.printf("BMI is: %.2f", bmi);
-
+        System.out.printf("BMI is: %.2f", bmi );
+        System.out.println(" ");
+        if(bmi<18.5)System.out.print("Underweight");
+        else if (bmi>18.5 && bmi<24.9) System.out.print("Healthy weight");
+        else System.out.print("Overweight");
     }
 }
